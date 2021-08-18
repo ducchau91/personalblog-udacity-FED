@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fffaf0;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', serif;
+  letter-spacing: 0.5px;
+  margin: 0.2px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+  
+h4 {
+  font-size: 1.9em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+@media (max-width: 700px){
+  h1{
+    font-size: 2.5vh;
+  }
+  h2{
+    font-size: 2vh;
+  }
+  h3{
+    font-size: 1.5vh;
+  }
+  h4{
+    font-size: 1.5vh;
+  }
+  h5{
+    font-size: 1.5vh;
+  }
+}
+p {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  margin: 1em 0 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #86a578;
+}
+
+a:visited {
+  color: #f6aa1c;
+}
+
+a:hover {
+  color: #e54b4b;
+}
+
+strong {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+quote {
+  font-style: italic;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  padding: 10px 30px;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px 0;
+  font-family: 'Arial', serif;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: 600;
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: black;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: black;
+  transform: scale(0.9);
+}
+
+.btn-primary:active {
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #fffaf0;
+  transform: scale(0.9);
+}
+
+.btn-secondary {
+  background-color: #e54b4b;
+  border: 2px solid #e54b4b;
+  color: #fffaf0;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border: 2px solid #e54b4b;
+  color: #e54b4b;
+  transform: scale(0.9);
+}
+
+.btn-secondary:active {
+  background-color: transparent;
+  border: 2px solid #e54b4b;
+  color: #e54b4b;
+  transform: scale(0.9);
+}

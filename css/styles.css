@@ -1,0 +1,113 @@
+@import "layout.css";
+@import "nav.css";
+@import "footer.css";
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px auto auto auto;
+    grid-template-areas:
+    "main-post main-post main-post"
+    "post-1 post-1 post-1"
+    "post-2 post-2 post-2"
+    "ft ft ft";
+}
+
+@media (min-width: 600px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 30px;
+    gap: 6px;
+    grid-template-areas:
+    "main-post main-post post-1 post-1"
+    "main-post main-post post-2 post-2"
+    "ft ft ft ft";
+  }
+}
+
+
+/* content */
+
+.post {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  align-items: center;
+  min-height: 160px;
+  padding: 5px;
+}
+
+#main-post {
+  grid-area: main-post;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/napavalleymotorcycle.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #fffaf0;
+}
+
+
+/* tile styling */
+
+.text-gradient {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 60%;
+  max-width: 500px;
+  padding: 10px 20px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#post-1 {
+  grid-area: post-1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/packing.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+#post-2 {
+  grid-area: post-2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/motorcycletypes.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.post-info {
+  text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .post h2  {
+    font-size: 1.5em;
+  }
+
+  .post .post-info {
+    font-size: 0.8em;
+  }
+
+  .text-gradient {
+    padding: 5px 15px;
+    margin: 5px;
+  }
+}
